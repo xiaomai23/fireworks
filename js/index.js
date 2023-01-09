@@ -1,7 +1,7 @@
 // This is a prime example of what starts out as a simple project
 // and snowballs way beyond its intended size. It's a little clunky
 // reading/working on this single file, but here it is anyways :)
-//FancyPig's blog www.iculture.cc
+
 'use strict';
 console.clear();
 
@@ -117,7 +117,7 @@ const store = {
 	state: {
 		// will be unpaused in init()
 		paused: true,
-		soundEnabled: false,
+		soundEnabled: true,
 		menuOpen: false,
 		openHelpTopic: null,
 		fullscreen: isFullscreen(),
@@ -2276,7 +2276,7 @@ if (IS_HEADER) {
 	init();
 } else {
 	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('♥献给最爱的你');
+	setLoadingStatus('FIREWORKS');
 	setTimeout(() => {
 		soundManager.preload()
 		.then(
