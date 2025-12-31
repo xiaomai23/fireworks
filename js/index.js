@@ -2095,7 +2095,7 @@ const Spark = {
 
 
 const soundManager = {
-	baseURL: 'https://github.com/xiaomai23/fireworks/tree/main/mp3/',
+	baseURL: 'https://github.com/xiaomai23/fireworks/mp3/',
 	ctx: new (window.AudioContext || window.webkitAudioContext),
 	sources: {
 		lift: {
@@ -2289,4 +2289,5 @@ if (IS_HEADER) {
 			}
 		);
 	}, 0);
+
 }
